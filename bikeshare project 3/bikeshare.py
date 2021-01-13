@@ -219,7 +219,7 @@ def user_stats(df):
 def raw_data_load(df):
     """ This will display the raw data for filtered data"""
 
-    i = 5
+    i = 10
 
     while True:
         answer = input("Do you want to view raw data? Enter yes or no: ")
@@ -228,7 +228,7 @@ def raw_data_load(df):
         if answer == "yes":
             raw_data = df.head(i)
             print(raw_data)
-            i += 5
+            i += 10
             continue
         else:
             break
